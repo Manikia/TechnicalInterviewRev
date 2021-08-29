@@ -46,8 +46,23 @@ public class dictionaries
         System.out.println(shoppingList.get("Ham"));
         System.out.println(shoppingList.get("Sugar"));
 
+        //we can print the keys w their values
+        System.out.println("Printing keys w their values:\n");
+        System.out.println(shoppingList.toString());
 
+        //to clear our list we can do
+        //shoppingList.clear(); this didnt delete anything it just
+        //set our pointer to an empty list
 
+        //to check if our list is empty we do
+        System.out.println(shoppingList.isEmpty());
+
+        //if we want to remove something from the map we do
+        shoppingList.remove("Eggs");
+        System.out.println(shoppingList.toString());
+        //if we want to replace a value of a key we do
+        shoppingList.replace("Bread", Boolean.FALSE);
+        System.out.println(shoppingList.toString());
 
 
         // System.out.println("\nInsert things to the list and type 'end' to finish listing\n");
